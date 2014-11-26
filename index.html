@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Clapen</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	
+	
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/layout.css?v=3"/>
+	<link rel="stylesheet" href="css/settings.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/retina.css"/>
+	<link rel="stylesheet" href="css/clapen_layout.css"/>
+	
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/color-orange.css" title="orange">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/color-green.css" title="green">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/color-red.css" title="red">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/color-blue.css" title="blue">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/color-yellow.css" title="yellow">
+	<link rel="stylesheet" href="jquery_mobile/jquery.mobile-1.4.4.min.css">	
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	
+	
+	
+</head>
+<body class="royal_loader">	
+	<!-- Primary Page Layout
+	================================================== -->
+	<div data-role="page">	
+		<div data-role="panel" id="Contacto" data-position="right" data-display="overlay">
+				<div class="contacto_close" onclick="Close_Contacto();"></div>
+				<section id="more" style="height:100%" data-role="none">
+					<h4 id="contacto_h4">Contacto</h4>
+					<div id="contacto_box">
+						<form action="/mcsubscribe/subscribe" id="contacto_form" method="post">
+							<label for="contacto_nombre">Ingresa tu Nombre:</label>
+							<input id="contacto_nombre" name="email[nombre]" type="text" placeholder="..." data-role="none" />
+							
+							<label for="contacto_email">Ingresa tu Email:</label>
+							<input id="contacto_email" name="email[address]" type="email" placeholder="..." data-role="none" />
+							
+							<label for="contacto_text">En que podemos ayudarte?</label>
+							<input id="contacto_text" name="email[text]" type="text" placeholder="..." data-role="none" />
+							
+							<!-- onfocus="if (this.value=='En que podemos ayudarte?') this.value = ''" type="text" value = "" -->
+							
+							<input name="commit" type="submit" value="Contactate!" id="contacto_commit" data-role="none" />
+						</form>
+					</div>
+					<div id="contacto_social">
+						<a href="https://twitter.com/clapenapp" class="twitter_button"></a>
+						<a href="https://facebook.com/clapenapp" class="facebook_button"></a>
+						<a href="http://instagram.com/clapenapp" class="instagram_button"></a>
+					</div>
+					<div class="legal">
+						Copyright © 2014 Clapen
+					</div>
+				</section>
+		</div><!-- /panel -->
+	
+	
+	<!-- MENU
+    ================================================== -->	
+
+		<nav id="menu-wrap" class="menu-back cbp-af-header">
+			<div class="container">
+				<div class="sixteen columns">
+					<div>clapen</div>
+					<ul class="slimmenu">
+						<li> 
+							<a href="#home" data-ps2id-offset="100">contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>	
+	
+	<!-- HOME SECTION
+    ================================================== -->
+	<section class="home" id="home">		
+
+		<video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" poster="images/1.jpg"> 
+			<source src="videos/video.webm" type="video/webm"> 
+			<source src="videos/video.mp4" type="video/mp4"> 
+			<source src="videos/video.ogg" type="video/ogg"> 
+		</video>
+	
+		<div class="tp-banner-container">
+			<div class="tp-banner" >				
+				<ul>
+					<!-- THE FIRST SLIDE -->
+					
+					<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-title="PASSION">
+						<img src="images/transparent.png" alt=""  />
+						<div class="just_pattern"></div>
+						
+						
+						<!-- THE CAPTIONS IN THIS SLIDE -->	
+						<div class="caption big-text lft ltt tp-resizeme"  
+							 data-x="center" 
+							 data-y="center" 
+							 data-speed="700" 
+							 data-start="700" 
+							 data-easing="easeOutExpo" style="z-index: 200;">
+							<div class="big-text">una nueva forma
+						<br> de entrenar</div>	
+
+						</div>	
+						<div class="caption small-text lft ltt tp-resizeme"  
+							 data-x="center" 
+							 data-y="center" 
+							 data-speed="600" 
+							 data-start="300" 
+							 data-easing="Elastic.easeOut" style="z-index: 200;">
+							<div class="top-text">Sumate a la revolución del fitness!</div>	
+						</div>
+						<div class="caption small-text lft ltt"  
+							 data-x="center" 
+							 data-y="center" 
+							 data-speed="700" 
+							 data-start="1300" 
+							 data-easing="Elastic.easeOut" style="z-index: 200;">
+							<div class="cl-effect"><a href="#about" data-gal="m_PageScroll2id" data-ps2id-offset="65"><span data-hover="Clapen!">Call to action</span></a></div>
+						</div>	
+					</li>						
+				</ul>
+			</div>
+		</div>								
+		
+	</section>	
+			
+	<section class="services" id="services">
+		<br />
+		<div class="container">
+			<div class="sixteen columns">
+				<h3>entrenamiento en grupo al aire libre</h3>
+			</div>
+			<div class="sixteen columns">
+				<div class="sub-text-line"></div>
+			</div>	
+		</div>
+		<div class="services-icons-wrapper">
+			<div class="container">
+				<div class="one-third column services-icon-padding tipped">
+					<div class="icon-services">&#xf041;</div>
+					<h5>Elegí donde entrenar</h5>
+					<p>Encontrá las distintas clases que se dan en tu barrio.</p>
+				</div>	
+				<div class="one-third column services-icon-padding tipped">
+					<div class="icon-services">&#xf073;</div>
+					<h5>Reservar tu lugar</h5>
+					<p>Selecciona la clase que en la que te interesa participar, y hace tu reserva a través de nuestra plataforma.</p>
+				</div>
+				<div class="one-third column services-icon-padding tipped">
+					<div class="icon-services">&#xf118;</div>
+					<h5>Entrená, divertite y volvé</h5>
+					<p>Disfruta de las mejores clases de Buenos Aires con una dinámica distinta.</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>	
+
+		<div class="clear"></div>		
+	</section>
+	
+	<section class="sec1">	
+		<div class="container">
+			<div class="four columns" style="text-align:center;margin-top:35px;">
+				<div class="icon-services" style="font-size:50px">&#xf118;</div>
+			</div>
+			<div class="nine columns">
+				<h5>Somos divertidos, somo clapen</h5>
+				Entrenar tiene que ser divertido y recompensar! No solo se trata de trabajo duro, si no de disfrutar cada entrenamiento que te acerca a tu meta. Divertite en nuestras clases con una dinámica diferente, haciendo nuevos amigos, sin dejar de lado tus objetivos.
+			</div>					
+		</div>		
+	</section>
+	
+	<section class="sec2">	
+		<div class="container">
+			<div class="nine columns">
+				<h5>Paga por lo que usas</h5>
+				&bull; &iquestPara qué pagar una membresía si podes pagar solo lo que usas? En clapen podes pagar por clase o comprar los paquetes que más se adecuen a tus tiempos. <br>
+				&bull; Además, creemos que la constancia merece ser reconocida, es por eso que cuanto más entrenas, menos pagas!
+			</div>		
+			<div class="four columns" style="text-align:center;margin-top:35px;">
+				<div class="icon-services" style="font-size:50px">&#xf0d6;</div>
+			</div>
+		</div>		
+	</section>
+
+	<section class="sec1">	
+		<div class="container">
+			<div class="four columns" style="text-align:center;margin-top:35px;">
+				<div class="icon-services" style="font-size:50px">&#xf185;</div>
+			</div>
+			<div class="nine columns">
+				<h5>Disfruta del aire libre</h5>
+				&iquest;Por qué entrenar en un ambiente cerrado? En la ciudad hay un montón de espacios verdes en donde se puede entrenar. Vas a pasar mucho tiempo del día en una oficina, &iquest;no queres disfrutar un rato del sol?
+			</div>		
+		</div>		
+	</section>
+	
+	<section class="sec2">	
+		<div class="container">
+			<div class="nine columns">
+				<h5>Reserva y paga online</h5>
+				Reserva desde donde quieras! Nuestra platadorma permite reservar y pagar las clases de manera desde cualquier dispositivo. Elegí cuándo y donde queres tomar la clase, reservala y divertite!
+			</div>	
+			<div class="four columns" style="text-align:center;margin-top:35px;">
+				<div class="icon-services" style="font-size:50px">&#xf108;</div>
+			</div>		
+		</div>		
+	</section>
+
+	<section class="sec1">	
+		<div class="container">
+			<div class="four columns" style="text-align:center;margin-top:35px;">
+				<div class="icon-services" style="font-size:50px">&#xf004;</div>
+			</div>
+			<div class="nine columns">
+				<h5>Grupos reducidos y contacto con tu entrenador</h5>
+				Contamos con un grupo único de profesionales especializados en brindarte el mejor entrenamiento, de una manera personalizada y divertida! Accedé a grupos de entrenamiento reducidos, con personas de tu mismo nivel
+			</div>		
+		</div>		
+	</section>
+	
+	<section class="sec2">	
+		<div class="container">
+			<div class="sixteen columns" style="text-align:center;margin-top:35px;">
+				<h1>CALL TO ACTION</h1>
+			</div>	
+		</div>		
+	</section>
+	
+	<!-- FOOTER
+    ================================================== -->
+	
+	<div class="footer">
+		<a href="#home" data-gal="m_PageScroll2id" data-ps2id-offset="100" ><div class="back-top">&#xf102;</div></a>	
+		<div class="container">
+			<div class="sixteen columns">
+				<p>©2014 ALL RIGHT RESERVED. DESIGNED BY CLAPEN</p>
+			</div>
+		</div>
+	</div>
+		
+	<div class="clear"></div>
+	
+
+	</div>	
+	<!-- JAVASCRIPT
+    ================================================== -->
+<script type="text/javascript" src="js/jquery.js"></script>	
+<script type="text/javascript" src="js/modernizr.custom.js"></script> 
+<script type="text/javascript">
+(function($) { "use strict";
+	//Home fit screen	
+		
+	/*global $:false */
+	$(function(){"use strict";
+		$('#home').css({'height':($(window).height()*3/4)+'px'});
+		$(window).resize(function(){
+		$('#home').css({'height':($(window).height()*3/4)+'px'});
+		});
+	});	
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+            Royal_Preloader.config({
+                mode:           'number', // 'number', "text" or "logo"
+                timeout:        0,
+                showInfo:       true,
+                opacity:        1,
+                background:     ['#FFFFFF']
+            });
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/scrollReveal.js"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+      window.scrollReveal = new scrollReveal();
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/navigation.js"></script>	
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/cbpAnimatedHeader.min.js"></script>
+<script type="text/javascript" src="js/jquery.film_roll.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/jquery.fs.tipper.min.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/styleswitcher.js"></script>
+<script type="text/javascript" src="js/template.js"></script>  	  
+<!-- End Document
+================================================== -->
+</body>
+</html>
